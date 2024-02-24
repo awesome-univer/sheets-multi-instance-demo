@@ -8,27 +8,27 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
-    "@univerjs/core": "*",
-    "@univerjs/design": "*",
-    "@univerjs/docs": "*",
-    "@univerjs/docs-ui": "*",
-    "@univerjs/engine-formula": "*",
-    "@univerjs/engine-numfmt": "*",
-    "@univerjs/engine-render": "*",
-    "@univerjs/sheets": "*",
-    "@univerjs/sheets-formula": "*",
-    "@univerjs/sheets-numfmt": "*",
-    "@univerjs/sheets-ui": "*",
-    "@univerjs/ui": "*",
+    "@univerjs/core": "0.1.0-beta.5",
+    "@univerjs/design": "0.1.0-beta.5",
+    "@univerjs/docs": "0.1.0-beta.5",
+    "@univerjs/docs-ui": "0.1.0-beta.5",
+    "@univerjs/engine-formula": "0.1.0-beta.5",
+    "@univerjs/engine-numfmt": "0.1.0-beta.5",
+    "@univerjs/engine-render": "0.1.0-beta.5",
+    "@univerjs/sheets": "0.1.0-beta.5",
+    "@univerjs/sheets-formula": "0.1.0-beta.5",
+    "@univerjs/sheets-numfmt": "0.1.0-beta.5",
+    "@univerjs/sheets-ui": "0.1.0-beta.5",
+    "@univerjs/ui": "0.1.0-beta.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-mosaic-component": "^6.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.51",
-    "@types/react-dom": "^18.2.18",
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "vite": "^5.1.4"
   }
 }
