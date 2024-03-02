@@ -1,4 +1,4 @@
-name: Update @univerjs Dependencies
+name: Update univerjs/* dependencies
 
 on:
   workflow_dispatch:
