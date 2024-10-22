@@ -9,6 +9,7 @@ import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
 import { UniverRenderEnginePlugin } from "@univerjs/engine-render";
 import { UniverSheetsPlugin } from "@univerjs/sheets";
 import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
+import { UniverSheetsFormulaUIPlugin } from "@univerjs/sheets-formula-ui";
 import { UniverSheetsNumfmtPlugin } from "@univerjs/sheets-numfmt";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
@@ -40,15 +41,14 @@ function factory(id: string) {
       },
     });
 
-    univer.registerPlugin(UniverDocsPlugin, {
-      hasScroll: false,
-    });
-    univer.registerPlugin(UniverDocsUIPlugin)
     univer.registerPlugin(UniverRenderEnginePlugin);
     univer.registerPlugin(UniverUIPlugin, {
       container: id,
     });
-
+    univer.registerPlugin(UniverDocsPlugin, {
+      hasScroll: false,
+    });
+    univer.registerPlugin(UniverDocsUIPlugin)
     // sheets plugin
     univer.registerPlugin(UniverSheetsPlugin);
     univer.registerPlugin(UniverSheetsUIPlugin);
@@ -57,7 +57,7 @@ function factory(id: string) {
     univer.registerPlugin(UniverSheetsNumfmtPlugin);
     univer.registerPlugin(UniverFormulaEnginePlugin);
     univer.registerPlugin(UniverSheetsFormulaPlugin);
-
+    univer.registerPlugin(UniverSheetsFormulaUIPlugin);
     // create univer sheet instance
     univer.createUnit(UniverInstanceType.UNIVER_SHEET, Tools.deepClone(DEFAULT_WORKBOOK_DATA_DEMO));
 
